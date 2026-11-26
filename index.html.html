@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>アフリカ州の経済を考えよう｜学習アプリ</title>
+<style>
+:root{--ink:#202b36;--muted:#627181;--line:#dce3e9;--paper:#fff;--bg:#f3f6f8;--blue:#245b85;--blue2:#eaf3fa;--orange:#a85a18;--orange2:#fff3e8;--green:#26704c;--green2:#eaf6ef}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.65}
+header{background:#173c58;color:white;padding:24px 18px}
+.wrap{max-width:980px;margin:auto;padding:0 16px}
+.eyebrow{font-size:.82rem;letter-spacing:.08em;opacity:.85}
+h1{font-size:clamp(1.45rem,4vw,2.15rem);line-height:1.35;margin:5px 0 8px}
+header p{margin:0;color:#e5eef5}
+main{padding:20px 0 48px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+nav span{font-size:.85rem;background:#e3eaf0;border-radius:99px;padding:5px 11px;color:#405364}
+nav span.active{background:#d9eaf7;color:#174b72;font-weight:700}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 2px 8px #1a2a3810}
+h2{font-size:1.2rem;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+h3{font-size:1.02rem;margin:16px 0 8px}
+p{margin:8px 0}
+.small{font-size:.9rem;color:var(--muted)}
+.tag{display:inline-block;background:var(--blue2);color:var(--blue);font-size:.78rem;font-weight:700;padding:3px 9px;border-radius:99px;margin-bottom:8px}
+.notice{background:#f4f8fb;border-left:4px solid var(--blue);padding:11px 13px;border-radius:6px}
+.country-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.country{border:1px solid var(--line);border-radius:12px;padding:14px}
+.country.a{border-top:4px solid #d28a42}.country.b{border-top:4px solid #428a6a}
+.country h3{margin:0 0 6px}
+.chart{margin:10px 0}
+.barline{display:grid;grid-template-columns:100px 1fr 42px;gap:8px;align-items:center;margin:8px 0;font-size:.9rem}
+.track{height:18px;background:#edf1f4;border-radius:5px;overflow:hidden}
+.fill{height:100%;border-radius:5px}
+.fill.a{background:#d28a42}.fill.b{background:#428a6a}
+.big-number{font-size:1.65rem;font-weight:800}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:.94rem}
+th,td{border:1px solid var(--line);padding:9px;text-align:left}
+th{background:#f0f4f7}
+label{display:block;font-weight:700;margin:13px 0 5px}
+textarea,input[type=text]{width:100%;border:1px solid #bdc9d3;border-radius:9px;padding:11px 12px;font:inherit;background:white;color:var(--ink)}
+textarea{min-height:82px;resize:vertical}
+textarea:focus,input:focus{outline:3px solid #b8d8ef;border-color:#397eaa}
+fieldset{border:1px solid var(--line);border-radius:10px;padding:12px;margin:12px 0}
+legend{font-weight:700;padding:0 6px}
+.choice{display:flex;align-items:flex-start;gap:9px;padding:7px 4px;font-weight:400;margin:0}
+.choice input{margin-top:6px;transform:scale(1.15)}
+button{border:0;border-radius:9px;padding:11px 16px;font:inherit;font-weight:700;cursor:pointer}
+.primary{background:#205b86;color:white}.secondary{background:#e8eef3;color:#263b4c}
+button:focus{outline:3px solid #9bc9e8;outline-offset:2px}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}
+.step{color:var(--blue);font-size:.8rem;font-weight:800;letter-spacing:.05em}
+.output{background:#f7f9fb;border:1px dashed #aebdca;border-radius:10px;padding:13px;white-space:pre-wrap;min-height:110px;font-size:.92rem}
+.hidden{display:none}
+footer{text-align:center;color:var(--muted);font-size:.82rem;padding:20px}
+@media(max-width:560px){.card{padding:15px}.barline{grid-template-columns:82px 1fr 36px;font-size:.82rem}table{font-size:.84rem}th,td{padding:7px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <div class="eyebrow">中学校 社会科｜アフリカ州</div>
+  <h1>アフリカ州の国々は、どのように豊かさを目指すべきだろう？</h1>
+  <p>資料を読み取り、モノカルチャー経済と産業の多様化について考えよう。</p>
+ </div>
+</header>
+<main class="wrap">
+ <nav aria-label="学習の流れ">
+  <span class="active">1 資料を読む</span><span>2 基本課題</span><span>3 発展課題</span><span>4 提出</span>
+ </nav>
+
+ <section class="card">
+  <span class="tag">はじめに</span>
+  <h2>今日の学習の進め方</h2>
+  <ol>
+   <li>架空のA国・B国の資料を比べる。</li>
+   <li>資料から読み取ったことを3問に答える。</li>
+   <li>基本課題に取り組み、理由を書く。</li>
+   <li>余裕がある人は発展課題にも挑戦する。</li>
+   <li>最後に回答をまとめてコピーし、ロイロノートで提出する。</li>
+  </ol>
+  <div class="notice"><b>考えるポイント：</b>一つの産業に頼ることには、どのようなよさと危険があるのだろう？</div>
+ </section>
+
+ <section class="card">
+  <div class="step">資料 1</div>
+  <h2> A国とB国の輸出品のちがい</h2>
+  <p>どちらの国も農業を行っているが、輸出している品目の割合には違いがある。</p>
+  <div class="country-grid">
+   <div class="country a">
+    <h3>A国｜カカオに大きく依存</h3>
+    <p class="small">輸出品に占める割合（授業用の仮想データ）</p>
+    <div class="chart">
+     <div class="barline"><span>カカオ</span><div class="track"><div class="fill a" style="width:75%"></div></div><b>75%</b></div>
+     <div class="barline"><span>その他</span><div class="track"><div class="fill" style="width:25%;background:#b8c3cc"></div></div><b>25%</b></div>
+    </div>
+    <p>カカオの輸出が中心。カカオが売れると収入が増えるが、価格が下がると国全体の収入も大きく減る可能性がある。</p>
+   </div>
+   <div class="country b">
+    <h3>B国｜複数の産業がある</h3>
+    <p class="small">輸出品に占める割合（授業用の仮想データ）</p>
+    <div class="chart">
+     <div class="barline"><span>農産物</span><div class="track"><div class="fill b" style="width:30%"></div></div><b>30%</b></div>
+     <div class="barline"><span>工業製品</span><div class="track"><div class="fill b" style="width:40%;opacity:.75"></div></div><b>40%</b></div>
+     <div class="barline"><span>その他</span><div class="track"><div class="fill" style="width:30%;background:#b8c3cc"></div></div><b>30%</b></div>
+    </div>
+    <p>農業だけでなく工業なども行っている。一つの品目の価格が下がっても、ほかの産業で補える可能性がある。</p>
+   </div>
+  </div>
+ </section>
+
+ <section class="card">
+  <div class="step">資料 2</div>
+  <h2>カカオの価格が下がったら？</h2>
+  <p>カカオの国際価格が下落した場合、国全体の輸出による収入がどのように変化するかを比べた。</p>
+  <p class="small">価格下落前の収入を100としたときの指数（授業用の仮想データ）</p>
+  <div class="barline"><b>A国</b><div class="track"><div class="fill a" style="width:55%"></div></div><b>55</b></div>
+  <div class="barline"><b>B国</b><div class="track"><div class="fill b" style="width:90%"></div></div><b>90</b></div>
+  <div class="notice">A国は55まで下がったのに対し、B国は90にとどまった。B国は輸出品が複数あるため、カカオ価格下落の影響を受けにくかったと考えられる。</div>
+ </section>
+
+ <section class="card">
+  <div class="step">資料 3</div>
+  <h2>産業を多様化するには何が必要？</h2>
+  <table>
+   <thead><tr><th>必要なもの</th><th>具体例・期待できること</th></tr></thead>
+   <tbody>
+    <tr><td>工場・機械</td><td>農産物を加工したり、工業製品をつくったりできる。</td></tr>
+    <tr><td>教育・技術</td><td>機械を扱う人や専門的な技術を持つ人を育てる。</td></tr>
+    <tr><td>道路・港</td><td>原料や製品を運びやすくし、国内外との取引を広げる。</td></tr>
+    <tr><td>環境への配慮</td><td>工場の排水や森林伐採などを防ぎ、自然を守る。</td></tr>
+   </tbody>
+  </table>
+  <p class="small">産業の多様化には、設備や教育への投資が必要であり、成果が出るまで時間がかかることもある。また、利益が一部の企業や人に集中する可能性にも注意が必要である。</p>
+ </section>
+
+ <section class="card" id="reading">
+  <div class="step">STEP 1｜資料の読み取り</div>
+  <h2>まず、資料から分かることを書こう</h2>
+  <label for="r1">① A国とB国では、輸出品の種類にどのような違いがある？</label>
+  <textarea id="r1" placeholder="例：A国は……が中心だが、B国は……"></textarea>
+  <label for="r2">② カカオの価格が下落したとき、A国とB国の収入はどう違った？</label>
+  <textarea id="r2" placeholder="例：A国は……まで下がったが、B国は……"></textarea>
+  <label for="r3">③ 特定の農産物に頼りすぎることには、どのような問題がある？</label>
+  <textarea id="r3" placeholder="資料1・2を関連づけて考えよう。"></textarea>
+ </section>
+
+ <section class="card" id="basic">
+  <div class="step">STEP 2｜基本課題</div>
+  <h2>アフリカ州の国々は、モノカルチャー経済から脱却するべきだろうか？</h2>
+  <p class="small">モノカルチャー経済：特定の農産物や鉱産資源など、一部の品目の輸出に大きく頼る経済。</p>
+  <fieldset>
+   <legend>自分の考えに近いものを選ぼう</legend>
+   <label class="choice"><input type="radio" name="decision" value="A：モノカルチャー経済を続ける">A：モノカルチャー経済を続ける</label>
+   <label class="choice"><input type="radio" name="decision" value="B：産業を多様化する">B：産業を多様化する</label>
+   <label class="choice"><input type="radio" name="decision" value="C：両方を組み合わせる">C：両方を組み合わせる</label>
+  </fieldset>
+  <label for="basicReason">選んだ理由を書こう。資料の内容を根拠にすると説得力が増す。</label>
+  <textarea id="basicReason" placeholder="私は……がよいと考える。なぜなら……だからだ。"></textarea>
+ </section>
+
+ <section class="card" id="advanced">
+  <div class="step">STEP 3｜発展課題</div>
+  <h2>産業を多様化すれば、アフリカ州の国々は本当に豊かになるのだろうか？</h2>
+  <p>産業を増やすだけで、国民全員が豊かになるとは限らない。何を大切にすべきか考えよう。</p>
+  <fieldset>
+   <legend>国を豊かにするために、特に重要だと思う取り組みを選ぼう（複数可）</legend>
+   <label class="choice"><input type="checkbox" name="priority" value="工場・工業を育てる">工場・工業を育てる</label>
+   <label class="choice"><input type="checkbox" name="priority" value="学校教育・職業訓練を充実させる">学校教育・職業訓練を充実させる</label>
+   <label class="choice"><input type="checkbox" name="priority" value="道路や港など交通網を整える">道路や港など交通網を整える</label>
+   <label class="choice"><input type="checkbox" name="priority" value="環境を守る仕組みを整える">環境を守る仕組みを整える</label>
+  </fieldset>
+  <label for="deep">産業を多様化する際に、気をつけるべきことは何だろう？</label>
+  <textarea id="deep" placeholder="例：工場をつくっても、利益が……"></textarea>
+  <label for="future">アフリカ州の国々が本当に豊かになるために、どのような取り組みが必要だと思う？</label>
+  <textarea id="future" placeholder="自分が国のリーダーになったつもりで考えよう。"></textarea>
+  <p class="small">※発展課題は、基本課題を終えた人が取り組もう。</p>
+ </section>
+
+ <section class="card">
+  <div class="step">STEP 4｜提出</div>
+  <h2>回答をまとめてロイロノートに提出しよう</h2>
+  <p>「回答をまとめる」を押すと、入力した内容が下に表示される。内容を確認してコピーし、ロイロノートに貼り付けよう。</p>
+  <div class="actions">
+   <button class="primary" id="make">回答をまとめる</button>
+   <button class="secondary" id="copy">回答をコピー</button>
+  </div>
+  <p id="status" class="small" aria-live="polite">まだ回答をまとめていません。</p>
+  <div id="output" class="output" aria-label="提出用の回答">ここに提出用の文章が表示されます。</div>
+  <div class="actions">
+   <button class="secondary" id="print">印刷・PDF保存</button>
+   <button class="secondary" id="reset">入力内容を消去</button>
+  </div>
+ </section>
+ <footer>※A国・B国の数値は、資料の読み取りを目的とした授業用の架空データです。実在する国の統計ではありません。</footer>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+let report = "";
+function selectedRadio(name){const el=document.querySelector('input[name="'+name+'"]:checked');return el?el.value:"未回答";}
+function selectedChecks(name){return [...document.querySelectorAll('input[name="'+name+'"]:checked')].map(x=>x.value).join("、")||"未選択";}
+function makeReport(){
+ const r1=$("r1").value.trim(),r2=$("r2").value.trim(),r3=$("r3").value.trim();
+ const basic=$("basicReason").value.trim(),decision=selectedRadio("decision");
+ const priorities=selectedChecks("priority"),deep=$("deep").value.trim(),future=$("future").value.trim();
+ const advancedDone=priorities!=="未選択"||deep||future;
+ report=
+`【アフリカ州の経済を考えよう】
+
+■資料の読み取り
+① A国とB国の輸出品の違い
+${r1||"未回答"}
+
+② カカオ価格下落時の収入の違い
+${r2||"未回答"}
+
+③ 特定の農産物に頼りすぎる問題
+${r3||"未回答"}
+
+■基本課題
+考え：${decision}
+理由：
+${basic||"未回答"}
+${advancedDone?`
+■発展課題
+重要だと思う取り組み：${priorities}
+産業を多様化する際に気をつけること：
+${deep||"未回答"}
+国々が豊かになるために必要な取り組み：
+${future||"未回答"}`:"■発展課題：今回は未回答"}
+`;
+ $("output").textContent=report;
+ $("status").textContent="回答をまとめました。内容を確認して「回答をコピー」を押してください。";
+}
+$("make").addEventListener("click",makeReport);
+$("copy").addEventListener("click",async()=>{
+ if(!report)makeReport();
+ try{
+  if(navigator.clipboard && window.isSecureContext){await navigator.clipboard.writeText(report);}
+  else{const t=document.createElement("textarea");t.value=report;document.body.appendChild(t);t.select();document.execCommand("copy");t.remove();}
+  $("status").textContent="コピーしました。ロイロノートに貼り付けて提出してください。";
+ }catch(e){
+  const t=document.createElement("textarea");t.value=report;document.body.appendChild(t);t.focus();t.select();
+  $("status").textContent="自動コピーできませんでした。表示された文章を選択してコピーしてください。";
+ }
+});
+$("print").addEventListener("click",()=>window.print());
+$("reset").addEventListener("click",()=>{
+ if(!confirm("入力した回答をすべて消去します。よろしいですか？"))return;
+ document.querySelectorAll("textarea").forEach(x=>x.value="");
+ document.querySelectorAll('input[type="radio"],input[type="checkbox"]').forEach(x=>x.checked=false);
+ report="";$("output").textContent="ここに提出用の文章が表示されます。";$("status").textContent="入力内容を消去しました。";
+});
+</script>
+</body>
+</html>
